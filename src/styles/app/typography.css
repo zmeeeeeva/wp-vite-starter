@@ -1,0 +1,39 @@
+:root {
+    --font-face-main: "Space Grotesk", sans-serif;
+    --font-face-headings: "Space Grotesk", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-face-headings), sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1, .h1 {
+    @apply text-4xl mb-6;
+}
+
+h2, .h2 {
+    @apply text-2xl mb-6;
+}
+
+h3, .h3 {
+    @apply text-lg mb-6;
+}
+
+h4, .h4 {
+    @apply font-bold mb-3;
+    font-size: inherit;
+}
+
+h5, .h5 {
+    @apply font-bold mb-3;
+    font-size: inherit;
+}
+
+h6, .h6 {
+    @apply font-bold;
+    font-size: inherit;
+}
+

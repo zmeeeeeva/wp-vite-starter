@@ -1,0 +1,23 @@
+.menu-list {
+    @apply flex;
+}
+
+.menu-list__item {
+    @apply mr-3;
+}
+
+.menu__link {
+    @apply opacity-65 hover:opacity-100 transition-opacity;
+}
+
+.menu-list__item:last-child {
+    @apply mr-0;
+}
+
+.menu__link.is-current {
+    @apply opacity-100;
+}
+
+.menu-toggle {
+    @apply lg:hidden;
+}

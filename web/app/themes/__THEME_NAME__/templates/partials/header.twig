@@ -1,0 +1,15 @@
+<nav class="header">
+  <a href="{{ function('get_home_url') }}"
+     class="header__home-link"
+  >
+    <div class="js-root-container" data-content="React component example">
+    </div>
+  </a>
+
+  <div class="header__menu">
+    {% include 'partials/menu.twig' with {
+      'items' : menu
+    } %}
+  </div>
+  {% include 'partials/menu-toggle.twig' %}
+</nav>

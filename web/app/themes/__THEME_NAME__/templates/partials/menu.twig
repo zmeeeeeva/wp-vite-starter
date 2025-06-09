@@ -1,0 +1,11 @@
+<ul class="menu-list">
+  {% for item in items %}
+    {% apply spaceless %}
+      <li class="menu-list__item">
+        <a class="menu__link {{ item.is_current ? 'is-current' : '' }} {{ item.classes | default('') }}"
+           href="{{ item.url }}"
+           {% if item.target %}target="{{ item.target }}"{% endif %}>{{ item.title }}</a>
+      </li>
+    {% endapply %}
+  {% endfor %}
+</ul>

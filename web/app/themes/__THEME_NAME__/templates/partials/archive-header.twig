@@ -1,0 +1,8 @@
+<div class="archive-header">
+  <h1 class="archive-header__title">{{ object.name }} ({{ object.count }})</h1>
+  {% if object.description %}
+    <p>
+      {{ object.description | raw }}
+    </p>
+  {% endif %}
+</div>

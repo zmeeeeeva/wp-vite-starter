@@ -1,0 +1,13 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  {% if object %}
+    {% include 'partials/archive-header.twig' with {
+      'object' : object
+    } %}
+  {% endif %}
+  {% include 'partials/posts.twig' with {
+    'posts' : posts,
+    'pagination' : pagination,
+  } %}
+{% endblock %}

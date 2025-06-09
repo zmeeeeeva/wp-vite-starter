@@ -1,0 +1,13 @@
+{% if lazy %}
+  <img
+      {{ delay ? 'data-delay="true"' : '' }}
+      src="{{ thumbnail }}"
+      data-src="{{ src }}"
+      alt="{{ alt | replace({'&nbsp;': ' '}) | raw }}"
+      class="js-lazy is-lazy is-lazy-loading" />
+{% else %}
+  <img
+      src="{{ src }}"
+      alt="{{ alt | replace({'&nbsp;': ' '}) | raw }}"
+      class="" />
+{% endif %}

@@ -1,0 +1,29 @@
+{% block html_head_container %}
+  {% include 'partials/html-header.twig' %}
+{% endblock %}
+
+{% include 'utils/gtag.twig' %}
+
+<body {{ function('body_class') }} data-template="base.twig">
+
+{% include 'partials/header.twig' %}
+
+<div class="site-wrapper checked">
+  <section id="content" role="main" class="site-wrapper__content">
+    {% block content %}
+      {{ __('no.content', '__THEME_NAME__') }}
+    {% endblock %}
+  </section>
+</div>
+
+{% block footer %}
+  {% include 'partials/footer.twig' %}
+{% endblock %}
+
+{% include 'svg/sprites.twig' %}
+
+{{ function('wp_footer') }}
+
+</body>
+</html>
+

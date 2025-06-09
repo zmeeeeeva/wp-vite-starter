@@ -1,0 +1,10 @@
+.header {
+    @apply flex z-40 w-full h-auto items-center justify-between;
+    @apply py-2 px-10 pt-10 text-2xl;
+}
+
+.emojis {
+    span {
+        @apply w-[30px] text-3xl inline-block saturate-0 brightness-100 mr-1;
+    }
+}

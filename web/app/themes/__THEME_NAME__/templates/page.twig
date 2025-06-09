@@ -1,0 +1,13 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  <div class="single">
+    <h1 class="single__title">
+      {{ title | raw }}
+    </h1>
+
+    <div class="single__content">
+      {{ content | raw }}
+    </div>
+  </div>
+{% endblock %}

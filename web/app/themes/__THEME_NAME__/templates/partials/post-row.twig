@@ -1,0 +1,21 @@
+<div class="post-row">
+  <div class="post-row__image">
+    {% if image %}
+      {% include 'partials/image.twig' with image %}
+    {% endif %}
+  </div>
+  <div class="post-row__content">
+    <div class="post-row__top">
+      <span>{{ date }}</span>
+      <span>{{ author }}</span>
+    </div>
+    <h2 class="post-row__title">
+      <a href="{{ url }}">
+        {{ title | raw }}
+      </a>
+    </h2>
+    <div class="post-row__excerpt">
+      {{ excerpt | raw }}
+    </div>
+  </div>
+</div>

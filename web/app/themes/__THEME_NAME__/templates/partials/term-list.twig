@@ -1,0 +1,8 @@
+<div class="term-list">
+  <strong class="term-list__label">{{ label }}</strong>
+  <div class="term-list__items">
+    {% for term in terms %}
+      <a class="term-list__item" href="{{ term.url }}">{{ term.name }}</a>
+    {% endfor %}
+  </div>
+</div>

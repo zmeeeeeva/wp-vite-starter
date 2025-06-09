@@ -1,0 +1,21 @@
+.term-list {
+    @apply mb-6;
+
+    &:last-child {
+        @apply mb-3;
+    }
+}
+
+.term-list__label {
+    @apply font-semibold text-xs text-neutral-500 tracking-widest;
+    @apply block mb-4;
+}
+
+.term-list__items {
+
+}
+
+.term-list__item {
+    @apply border-1 border-neutral-500 px-2 py-1 rounded-sm text-neutral-300 mr-1;
+    @apply hover:text-neutral-300 hover:bg-neutral-700 transition-colors;
+}

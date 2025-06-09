@@ -1,0 +1,12 @@
+<div class="posts">
+  {% for post in posts %}
+    <div class="posts__item">
+      {% include 'partials/post-row.twig' with post %}
+    </div>
+  {% endfor %}
+</div>
+{% if pagination %}
+  {% include 'partials/pagination.twig' with {
+    'pagination' : pagination
+  } %}
+{% endif %}

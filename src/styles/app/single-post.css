@@ -1,0 +1,33 @@
+.single-post__container {
+
+}
+
+.single-post__image {
+    @apply mb-12;
+
+    img {
+        @apply w-full h-full object-cover;
+    }
+}
+
+.single-post__title {
+    @apply mb-6;
+}
+
+.single-post__top {
+    @apply font-semibold text-xs text-neutral-500 tracking-widest;
+    @apply flex justify-between;
+    @apply mb-1;
+}
+
+.single-post__content {
+    @apply mb-12;
+
+    p {
+       @apply mb-6;
+    }
+}
+
+.single-post__bottom {
+
+}

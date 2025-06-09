@@ -1,0 +1,38 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  <div class="single-post__container single--{{ type }}">
+    {% if image %}
+      <div class="single-post__image">
+        {% include 'partials/image.twig' with image %}
+      </div>
+    {% endif %}
+    <div class="single-post__top">
+      <span>{{ date }}</span>
+      <span>{{ author }}</span>
+    </div>
+    <div class="single-post__content">
+      <h1 class="single-post__title">
+        {{ title | raw }}
+      </h1>
+
+      {{ content | raw }}
+    </div>
+    {% if tags or categories %}
+      <div class="single-post__bottom">
+        {% if tags %}
+          {% include 'partials/term-list.twig' with {
+            'terms' : tags,
+            'label' : __('tags', '__THEME_NAME__')
+          } %}
+        {% endif %}
+        {% if categories %}
+          {% include 'partials/term-list.twig' with {
+            'terms' : categories,
+            'label' : __('categories', '__THEME_NAME__')
+          } %}
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

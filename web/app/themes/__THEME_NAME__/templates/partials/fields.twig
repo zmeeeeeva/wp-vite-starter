@@ -1,0 +1,9 @@
+{% if fields %}
+  <div class="fields {{ class }}">
+    {% for key, value in fields %}
+      {% if value is not iterable %}
+        <span>{{ label(key) }}: {{ value | raw }}</span>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

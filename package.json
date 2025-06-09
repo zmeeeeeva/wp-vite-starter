@@ -1,0 +1,38 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "build:ssr": "vite build && vite build --ssr",
+        "dev": "vite",
+        "lint": "eslint . --fix",
+        "types": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss": "^4.1.8",
+        "@tailwindcss/vite": "^4.1.8",
+        "@vitejs/plugin-react": "^4.4.1",
+        "@vitejs/plugin-react-swc": "^3.9.0",
+        "autoprefixer": "^10.4.21",
+        "postcss": "^8.5.4",
+        "postcss-import": "^16.1.0",
+        "tailwindcss": "^4.1.8",
+        "vite": "^6.3.4",
+        "vite-plugin-mkcert": "^1.17.8"
+    },
+    "dependencies": {
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "concurrently": "^9.0.1",
+        "focus-trap": "^7.6.4",
+        "fs": "^0.0.1-security",
+        "globals": "^15.14.0",
+        "path": "^0.12.7",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-linux-x64-gnu": "4.9.5",
+        "lightningcss-linux-x64-gnu": "^1.29.1"
+    }
+}

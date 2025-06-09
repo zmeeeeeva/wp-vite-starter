@@ -1,0 +1,31 @@
+.post-row {
+    @apply overflow-hidden flex mb-12;
+}
+
+.post-row__content {
+    @apply w-full;
+}
+
+.post-row__image {
+    @apply aspect-square w-[200px] mr-12 bg-green-500 border-1;
+    background: url('data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"8\" height=\"8\"%3E%3Cpath d=\"M0 8 L8 0 M-1 1 L1 -1 M7 9 L9 7\"  stroke=\"rgba(255,255,255,0.3)\" stroke-width=\"1\"/%3E%3C/svg%3E');
+    border-color: rgba(255,255,255,0.3);
+
+    img {
+        @apply h-full w-full object-cover;
+    }
+}
+
+.post-row__top {
+    @apply font-semibold text-xs text-neutral-500 tracking-widest;
+    @apply flex justify-between;
+    @apply mb-1;
+}
+
+.post-row__title {
+    @apply mb-3 text-3xl;
+}
+
+.post-row__excerpt {
+    @apply mb-3;
+}

@@ -1,0 +1,7 @@
+.site-wrapper {
+    @apply flex-1 p-10;
+}
+
+.site-wrapper__content {
+    @apply max-w-screen-md my-0 text-left;
+}

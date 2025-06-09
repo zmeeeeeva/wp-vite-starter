@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import "tailwindcss";
+
+@import './app/reset.css';
+@import './app/variables.css';
+@import './app/typography.css';
+@import './app/base.css';
+@import './app/checked.css';
+@import './app/site-wrapper.css';
+@import './app/header.css';
+@import './app/menu.css';
+@import './app/archive-header.css';
+@import './app/footer.css';
+@import './app/posts.css';
+@import './app/post-row.css';
+@import './app/single-post.css';
+@import './app/term-list.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
