@@ -2,6 +2,8 @@
 
 namespace WpApp;
 
+use Env\Env;
+
 class Assets
 {
     const ASSETS_DIR = '/public/';
@@ -40,7 +42,7 @@ class Assets
     function theme_enqueue_dev_assets(): void
     {
         if (defined('WP_ENV') && WP_ENV === 'development') {
-            $port = env('VITE_PORT');
+            $port = Env::get('VITE_PORT');
 
             // HMR React support
             echo sprintf('<script type="module">

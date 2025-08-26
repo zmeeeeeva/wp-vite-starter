@@ -23,13 +23,13 @@
         {% if tags %}
           {% include 'partials/term-list.twig' with {
             'terms' : tags,
-            'label' : __('tags', '__THEME_NAME__')
+            'label' : __('tags', 'roots')
           } %}
         {% endif %}
         {% if categories %}
           {% include 'partials/term-list.twig' with {
             'terms' : categories,
-            'label' : __('categories', '__THEME_NAME__')
+            'label' : __('categories', 'roots')
           } %}
         {% endif %}
       </div>

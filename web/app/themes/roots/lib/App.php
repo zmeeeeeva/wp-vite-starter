@@ -2,6 +2,7 @@
 
 namespace WpApp;
 
+use Env\Env;
 use WP_Post;
 use WP_Term;
 use WP_Query;
@@ -11,7 +12,7 @@ class App
 
     public static function get_gtag()
     {
-        return env('GTAG') ?? '';
+        return Env::get('GTAG') ?? '';
     }
 
     public static function get_content(WP_Query $wp_query): array
@@ -26,8 +27,8 @@ class App
             'current' => $paged,
             'total' => $wp_query->max_num_pages,
             'mid_size' => 2,
-            'prev_text' => __('«', '__THEME_NAME__'),
-            'next_text' => __('»', '__THEME_NAME__'),
+            'prev_text' => __('«', 'roots'),
+            'next_text' => __('»', 'roots'),
         ]);
 
         return [

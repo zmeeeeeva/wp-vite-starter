@@ -13,7 +13,7 @@ class Setup
     {
         add_action('setup_theme', function () {
             if (defined('WP_INSTALLING') && WP_INSTALLING) {
-                switch_theme('__THEME_NAME__');
+                switch_theme('roots');
             }
         });
 
@@ -21,7 +21,7 @@ class Setup
         add_action('after_setup_theme', [$this, 'remove_admin_bar']);
         add_action('after_setup_theme', [$this, 'register_menus']);
 
-        load_theme_textdomain('__THEME_NAME__', get_template_directory() . '/languages');
+        load_theme_textdomain('roots', get_template_directory() . '/languages');
 
         add_filter('the_content', [$this, 'override_img']);
         add_filter('embed_oembed_html', [$this, 'embed_oembed_html'], 10, 3);
@@ -39,8 +39,8 @@ class Setup
     public function register_menus()
     {
         register_nav_menus([
-            'primary' => __('Main Menu', '__THEME_NAME__'),
-            'menu_social' => __('Social Menu', '__THEME_NAME__'),
+            'primary' => __('Main Menu', 'roots'),
+            'menu_social' => __('Social Menu', 'roots'),
         ]);
     }
 
